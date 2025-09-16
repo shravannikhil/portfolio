@@ -1,0 +1,351 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #007bff; /* A nice blue */
+    --secondary-color: #333333; /* Dark gray for text */
+    --background-color: #ffffff; /* White */
+    --container-color: #f2f2f2; /* Light gray for sections */
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 960px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* Basic Styles for Sections */
+section {
+    padding: 4rem 0 2rem;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Header & Nav */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav__menu {
+    position: fixed;
+    top: -100%; /* Hide off-screen */
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 4rem 0;
+    transition: top 0.4s;
+}
+
+.nav__list {
+    list-style: none;
+    text-align: center;
+}
+
+.nav__item {
+    margin-bottom: 2rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav__toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Show Menu - This class will be added with JavaScript */
+.show-menu {
+    top: 3.5rem;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 6rem;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+/* Justify text in the About Me section */
+.about p {
+    text-align: justify;
+}
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+/* Projects Section */
+.projects__grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.project__card {
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.project__img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project__links a {
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+/* Contact Section */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__form input, .contact__form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-family: var(--font-family);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--container-color);
+}
+
+/* For medium devices (tablets) */
+@media screen and (min-width: 768px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav__toggle {
+        display: none ; /* Hide hamburger menu*/
+    }
+
+    .nav__menu {
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+
+    .nav__list {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav__item {
+        margin-bottom: 0;
+    }
+
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* For large devices (desktops) */
+@media screen and (min-width: 960px) {
+    .projects__grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+/* Hero Section - Image and content styling */
+.hero {
+    padding-top: 6rem;
+    text-align: center; /* Center content by default */
+}
+
+.hero__content {
+    display: flex; /* Use flexbox to put image and text side-by-side */
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center; /* Center items horizontally in the column */
+    gap: 2rem; /* Space between image and text */
+    margin-bottom: 2rem; /* Space before the button */
+}
+
+.hero__img {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Keep aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Crop image to fit without distortion */
+    border: 4px solid var(--primary-color); /* Optional: add a border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Ensure title is centered on small screens */
+}
+
+.hero__description {
+    text-align: center; /* Ensure description is centered on small screens */
+}
+
+
+/* Adjust for larger screens (e.g., tablets and desktops) */
+@media screen and (min-width: 768px) {
+    .hero__content {
+        flex-direction: row;
+        /* CHANGE 1: Instead of 'center', align to 'flex-start' for left alignment. */
+        justify-content: flex-start;
+        /* CHANGE 2: Add some left padding to the whole content block to move it over */
+        padding-left: 5%; /* Adjust this percentage as needed */
+        text-align: left;
+    }
+
+    .hero__img {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .hero__title,
+    .hero__description {
+        text-align: left;
+    }
+
+    /* Optional: If you want to further fine-tune the image's position relative to the text,
+       you could add a negative margin here, but usually, adjusting the parent is better.
+       Example (don't add unless needed):
+       .hero__img {
+           margin-left: -1rem;
+       }
+    */
+}
+
+
+/* ==================== PUBLICATIONS ==================== */
+.publication__card {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.publication__journal {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.publication__description {
+    margin-bottom: 1rem;
+}
+
+.publication__links a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* ==================== CERTIFICATIONS ==================== */
+.certifications__grid {
+    display: grid;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.certification__card {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--container-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certification__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.certification__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.certification__issuer {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.certification__link {
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.certification__link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout for certifications grid */
+@media screen and (min-width: 768px) {
+    .certifications__grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .certifications__grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
+    }
+}

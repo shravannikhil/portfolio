@@ -1,11 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shravan Nikhil | Portfolio</title>
+    <title>Shravan Nikhil</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Welcome to Shravan Nikhil's Portfolio</h1>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Shravan Nikhil</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle">☰</div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero container">
+            <div class="hero__content"> <img src="images/profile.jpg" alt="Your Name's Profile Picture"
+                    class="hero__img">
+                <div>
+                    <h1 class="hero__title">Hi, I'm Shravan Nikhil<br>AI/ML & Full-Stack Developer</h1>
+                    <p class="hero__description">Results-driven Computer Science graduate specializing in AI, machine
+                        learning, and full-stack web development with Python and Django.</p>
+                </div>
+            </div>
+            <!-- <a href="#contact" class="button">Get in Touch</a> -->
+        </section>
+
+        <section id="about" class="about container">
+            <h2>About Me</h2>
+            <p>
+                I am a final-year Computer Science student at VCE, specializing in AI & Machine Learning. My passion is
+                building intelligent applications and robust web platforms. I have hands-on experience developing a spam
+                email detection model that achieved 98% accuracy and deploying a full-stack content sharing platform
+                using Django. I am eager to contribute my skills in problem-solving and collaboration to an innovative
+                team.
+            </p>
+            <div class="skills__list">
+                <span class="skill__item">Python |</span>
+                <span class="skill__item">C++ |</span>
+                <span class="skill__item">HTML |</span>
+                <span class="skill__item">CSS |</span>
+                <span class="skill__item">JavaScript |</span>
+                <span class="skill__item">Django |</span>
+                <span class="skill__item">Django RestFramework (DRF) |</span>
+                <span class="skill__item">MySQL |</span>
+                <span class="skill__item">MongoDB |</span>
+                <span class="skill__item">Git & GitHub |</span>
+                <span class="skill__item">VS Code |</span>
+                <span class="skill__item">Jupyter Notebook |</span>
+            </div>
+        </section>
+
+        <section id="projects" class="projects container">
+            <h2>My Projects</h2>
+            <div class="projects__grid">
+                <article class="project__card">
+                    <img src="images/project-shareweb.png" alt="ShareWEB project screenshot" class="project__img">
+                    <h3 class="project__title">ShareWEB - Content Sharing Platform </h3>
+                    <p class="project__description">A user-friendly web platform designed and deployed for secure
+                        content sharing, facilitating interaction among users in a secure environment. </p>
+                    <p class="project__stack">Tech Stack: HTML, CSS, Django, Python </p>
+                    <div class="project__links">
+                        <a href="[YOUR_LIVE_DEMO_LINK]" target="_blank">Live Demo</a>
+                        <a href="[YOUR_GITHUB_CODE_LINK]" target="_blank">Source Code</a>
+                    </div>
+                </article>
+
+                <article class="project__card">
+                    <img src="images/project-attendance.png" alt="Automated Attendance System screenshot"
+                        class="project__img">
+                    <h3 class="project__title">Automated Attendance System </h3>
+                    <p class="project__description">A system that performs real-time face recognition from a video feed
+                        to mark attendance automatically, saving the data to a CSV or Excel file. </p>
+                    <p class="project__stack">Tech Stack: Python, Face Recognition, NumPy, Pickle </p>
+                    <div class="project__links">
+                        <a href="[YOUR_LIVE_DEMO_LINK]" target="_blank">Live Demo</a>
+                        <a href="[YOUR_GITHUB_CODE_LINK]" target="_blank">Source Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="certifications" class="certifications container">
+            <h2>Certifications</h2>
+            <div class="certifications__grid">
+
+                <article class="certification__card">
+                    <h3 class="certification__title">Google Cloud Career Launchpad: Cloud Engineer Track</h3>
+                    <p class="certification__issuer">Issued by: Google Cloud Skills Boost</p>
+                    <a href="https://drive.google.com/file/d/12Dd0dm7dqCVcFDzp28OrqT2VyWazyW0s/view" target="_blank"
+                        rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+                <article class="certification__card">
+                    <h3 class="certification__title">Python Django Web Application Dev with Coding Exercises</h3>
+                    <p class="certification__issuer">Issued by: Udemy</p>
+                    <a href="https://www.udemy.com/certificate/UC-6eadd880-f303-4c33-b205-406a8a4f4f9b/" target="_blank"
+                        rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+                <article class="certification__card">
+                    <h3 class="certification__title">Java Full Stack</h3>
+                    <p class="certification__issuer">Issued by: Wipro</p>
+                    <a href="https://drive.google.com/file/d/1sw73DL_vJ9EIY_8D1qATP0FmbFSbs9nL/view" target="_blank"
+                        rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+
+                <article class="certification__card">
+                    <h3 class="certification__title">Smart Coder</h3>
+                    <p class="certification__issuer">Issued by: Smart Interviews</p>
+                    <a href="https://drive.google.com/file/d/1kHVGj-cPpqOTXAZ9-oq_Hq9nmdOWxA4N/view" target="_blank"
+                        rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+
+                <article class="certification__card">
+                    <h3 class="certification__title">Google Cloud Career Readiness: Associate Cloud Engineer</h3>
+                    <p class="certification__issuer">Issued by: Google Cloud Skills Boost</p>
+                    <a href="https://drive.google.com/file/d/1ZjTuhNWkFhRWbMHHf9AkiRo1XYbgXuN2/view" target="_blank"
+                        rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+
+                <article class="certification__card">
+                    <h3 class="certification__title">Job Ready Employability Skills</h3>
+                    <p class="certification__issuer">Issued by: Wadhwani Foundation</p>
+                    <a href="https://drive.google.com/file/d/1ViwETsvicAyCc0PphH3ZJHoqATZlr_6J/view" target="_blank"
+                        rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+                <article class="certification__card">
+                    <h3 class="certification__title">Programming, Data Structures and Algorithms Using Python</h3>
+                    <p class="certification__issuer">Issued by: NPTEL</p>
+                    <a href="https://www.linkedin.com/posts/shravan-nikhil_programming-dsa-python-activity-7081582383430303744-NEZB?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkPxngBz7RurTz5sB-VbSHsWtvkVjW7f1M"
+                        target="_blank" rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+                <article class="certification__card">
+                    <h3 class="certification__title">Advance Python Tools</h3>
+                    <p class="certification__issuer">Issued by: VMEG</p>
+                    <a href="https://www.linkedin.com/posts/shravan-nikhil_python-activity-7081105435574882304-uunr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkPxngBz7RurTz5sB-VbSHsWtvkVjW7f1M"
+                        target="_blank" rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+                <article class="certification__card">
+                    <h3 class="certification__title">Crash Course on Python</h3>
+                    <p class="certification__issuer">Issued by: Coursera</p>
+                    <a href="https://www.linkedin.com/posts/shravan-nikhil_python-coding-learningjourney-activity-7078001201992105985-56_B?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkPxngBz7RurTz5sB-VbSHsWtvkVjW7f1M"
+                        target="_blank" rel="noopener noreferrer" class="certification__link">View Credential →</a>
+                </article>
+
+            </div>
+        </section>
+        <section id="publications" class="publications container">
+            <h2>Publications</h2>
+            <article class="publication__card">
+                <h3 class="publication__title">Harvest Prediction by KNN Classification </h3>
+                <p class="publication__journal">Published in Nano World Journal - Dec 2023 </p>
+                <p class="publication__description">This research explores using the K-Nearest Neighbor algorithm for
+                    crop yield prediction, providing a tool for farmers to input soil conditions and receive
+                    recommendations for suitable crops. </p>
+                <div class="publication__links">
+                    <a href="https://jnanoworld.com/articles/v9s4/nwj-s4-yeswanth-sai-mahesh.pdf" target="_blank">Read
+                        Paper</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact Me</h2>
+            <p>I'm open to new opportunities. Let's connect!</p>
+            <form class="contact__form" data-netlify="true" name="contact">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shravan Nikhil. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
